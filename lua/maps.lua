@@ -37,8 +37,3 @@ keymap.set('n', '<S-w><right>', '<C-w>>')
 keymap.set('n', '<S-w><up>', '<C-w>+')
 keymap.set('n', '<S-w><down>', '<C-w>-')
 
--- Save changes
-keymap.set('n', '<C-s>' , ':w!"<CR>')
-
--- Exit neovim
-keymap.set('n', '<C-q>' , ':q!"<CR>')
