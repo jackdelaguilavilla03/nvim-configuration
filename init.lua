@@ -3,7 +3,7 @@ require('highlights')
 require('maps')
 require('plugins')
 
-local has = function (x)
+local has = function(x)
   return vim.fn.has(x) == 1
 end
 
@@ -16,5 +16,3 @@ end
 if is_win then
   require('windows')
 end
-
-print('init.lua loaded')
