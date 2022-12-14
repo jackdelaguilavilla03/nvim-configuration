@@ -1,4 +1,3 @@
-
 local status, ts = pcall(require, "nvim-treesitter.configs")
 if (not status) then return end
 
@@ -6,7 +5,7 @@ ts.setup {
   highlight = {
     enable = true,
     disable = {
-      "lua"
+      --"lua"
     },
   },
   indent = {
@@ -15,16 +14,13 @@ ts.setup {
   },
   ensure_installed = {
     "tsx",
+    "lua",
     "toml",
-    "fish",
-    "php",
     "json",
     "yaml",
-    "swift",
     "css",
     "html",
     "lua",
-    "vue"
   },
   autotag = {
     enable = true,

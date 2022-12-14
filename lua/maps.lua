@@ -44,7 +44,7 @@ keymap.set('n', '<C-w><down>', '<C-w>-')
 
 -- Save
 keymap.set('', '<C-s>', ':w!<CR>')
-keymap.set('', '<Leader>s', ':w!<CR>')
+keymap.set('', '<Leader>w', ':w!<CR>')
 
 -- Quit
 keymap.set('', '<C-q>', ':q!<CR>')
