@@ -67,6 +67,8 @@ protocol.CompletionItemKind = {
 -- Set up completion using nvim_cmp with LSP source
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+local lsp_flags = { debounce_text_changes = 150 }
+
 nvim_lsp.flow.setup {
   on_attach = on_attach,
   capabilities = capabilities
@@ -117,6 +119,12 @@ nvim_lsp.emmet_ls.setup {
       }
     }
   }
+}
+
+nvim_lsp.html.setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  -- capabilities = capabilities,
 }
 
 nvim_lsp.astro.setup {

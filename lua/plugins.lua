@@ -24,7 +24,7 @@ packer.startup(function(use)
   })
 
   -- Coc Neovim
-  use { 'neoclide/coc.nvim', branch = 'release' }
+  -- use { 'neoclide/coc.nvim', branch = 'release' }
 
   -- Completion
   use({
