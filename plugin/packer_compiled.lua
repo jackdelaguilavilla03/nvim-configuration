@@ -138,6 +138,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\jackd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
+  ["emmet-ls"] = {
+    loaded = true,
+    path = "C:\\Users\\jackd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\emmet-ls",
+    url = "https://github.com/aca/emmet-ls"
+  },
   ["git.nvim"] = {
     loaded = true,
     path = "C:\\Users\\jackd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\git.nvim",

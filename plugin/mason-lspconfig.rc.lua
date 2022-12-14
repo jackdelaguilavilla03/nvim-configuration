@@ -12,6 +12,7 @@ require('mason-tool-installer').setup {
   ensure_installed = {
     "prettierd",
     "eslint_d",
+    "emmet-ls",
     "json-lsp",
     "lua-language-server",
     "stylua",
