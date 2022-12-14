@@ -79,30 +79,20 @@ _G.packer_plugins = {
     path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["cmp-buffer"] = {
+  ["cmp-nvim-lsp-signature-help"] = {
     loaded = true,
-    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/cmp-buffer",
-    url = "https://github.com/hrsh7th/cmp-buffer"
-  },
-  ["cmp-nvim-lsp"] = {
-    loaded = true,
-    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp-signature-help",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help"
   },
   ["colorbuddy.nvim"] = {
     loaded = true,
     path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
-  ["git.nvim"] = {
+  ["impatient.nvim"] = {
     loaded = true,
-    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/git.nvim",
-    url = "https://github.com/dinhhuy258/git.nvim"
-  },
-  ["gitsigns.nvim"] = {
-    loaded = true,
-    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
-    url = "https://github.com/lewis6991/gitsigns.nvim"
+    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/impatient.nvim",
+    url = "https://github.com/lewis6991/impatient.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -119,15 +109,15 @@ _G.packer_plugins = {
     path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["markdown-preview.nvim"] = {
-    loaded = true,
-    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
-    url = "https://github.com/iamcco/markdown-preview.nvim"
-  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason-tool-installer.nvim"] = {
+    loaded = true,
+    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/mason-tool-installer.nvim",
+    url = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
@@ -143,16 +133,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
-  },
-  ["nvim-autopairs"] = {
-    loaded = true,
-    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
-    url = "https://github.com/windwp/nvim-autopairs"
-  },
-  ["nvim-bufferline.lua"] = {
-    loaded = true,
-    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua",
-    url = "https://github.com/akinsho/nvim-bufferline.lua"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -174,10 +154,15 @@ _G.packer_plugins = {
     path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["nvim-ts-autotag"] = {
+  ["nvim-treesitter-refactor"] = {
     loaded = true,
-    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
-    url = "https://github.com/windwp/nvim-ts-autotag"
+    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/nvim-treesitter-refactor",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-refactor"
+  },
+  ["nvim-treesitter-textobjects"] = {
+    loaded = true,
+    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -189,10 +174,20 @@ _G.packer_plugins = {
     path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  playground = {
+    loaded = true,
+    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["refactoring.nvim"] = {
+    loaded = true,
+    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/refactoring.nvim",
+    url = "https://github.com/ThePrimeagen/refactoring.nvim"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
@@ -203,11 +198,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["zen-mode.nvim"] = {
-    loaded = true,
-    path = "/Users/andyjackdelaguilavillanueva/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
-    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
