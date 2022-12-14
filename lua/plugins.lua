@@ -23,6 +23,9 @@ packer.startup(function(use)
     "WhoIsSethDaniel/mason-tool-installer.nvim",
   })
 
+  -- Coc Neovim
+  use { 'neoclide/coc.nvim', branch = 'release' }
+
   -- Completion
   use({
     "L3MON4D3/LuaSnip",
@@ -36,8 +39,6 @@ packer.startup(function(use)
     "aca/emmet-ls",
     -- "rcarriga/cmp-dap",
     "saadparwaiz1/cmp_luasnip",
-    -- "onsails/lspkind-nvim",
-    -- { "L3MON4D3/LuaSnip", tag = "v1.*" },
     "windwp/nvim-autopairs",
   })
 
