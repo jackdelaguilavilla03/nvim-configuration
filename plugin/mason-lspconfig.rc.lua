@@ -2,7 +2,7 @@ local status, nvim_mason_lsp = pcall(require, 'mason-lspconfig')
 if (not status) then return end
 
 nvim_mason_lsp.setup({
-  automatic_installation = false,
+  automatic_installation = true,
 })
 
 require('mason-tool-installer').setup {
@@ -13,7 +13,6 @@ require('mason-tool-installer').setup {
     "prettierd",
     "eslint_d",
     "emmet-ls",
-    "json-lsp",
     "lua-language-server",
     "stylua",
     "typescript-language-server",

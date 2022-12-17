@@ -49,3 +49,6 @@ keymap.set('', '<Leader>w', ':w!<CR>')
 -- Quit
 keymap.set('', '<C-q>', ':q!<CR>')
 keymap.set('', '<Leader>q', ':q!<CR>')
+
+-- visual block
+keymap.set('', '<Leader>v', '<C-v>')

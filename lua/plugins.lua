@@ -11,6 +11,7 @@ packer.startup(function(use)
   -- LSP
   use({
     "neovim/nvim-lspconfig",
+    "williamboman/nvim-lsp-installer",
     "hrsh7th/cmp-nvim-lsp-signature-help",
     "jose-elias-alvarez/null-ls.nvim",
     "glepnir/lspsaga.nvim", -- LSP UIs

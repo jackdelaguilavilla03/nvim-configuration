@@ -1,4 +1,4 @@
---vim.lsp.set_log_level("debug")
+vim.lsp.set_log_level("debug")
 
 local status, nvim_lsp = pcall(require, "lspconfig")
 if (not status) then return end
@@ -69,22 +69,27 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local lsp_flags = { debounce_text_changes = 150 }
 
-nvim_lsp.flow.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
+-- nvim_lsp.flow.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities
+-- }
 
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-  cmd = { "typescript-language-server", "--stdio" },
-  capabilities = capabilities
+  -- filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  capabilities = capabilities,
+  --   cmd = { "typescript-language-server", "--stdio" },
 }
 
-nvim_lsp.sourcekit.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
+-- nvim_lsp.volar.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+-- }
+
+-- nvim_lsp.sourcekit.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+-- }
 
 nvim_lsp.sumneko_lua.setup {
   capabilities = capabilities,
@@ -94,15 +99,20 @@ nvim_lsp.sumneko_lua.setup {
   end,
   settings = {
     Lua = {
+      runtime = {
+        version = "LuaJIT",
+      },
       diagnostics = {
         -- Get the language server to recognize the `vim` global
         globals = { 'vim' },
       },
-
       workspace = {
         -- Make the server aware of Neovim runtime files
         library = vim.api.nvim_get_runtime_file("", true),
         checkThirdParty = false
+      },
+      telemetry = {
+        enable = false,
       },
     },
   },
@@ -111,7 +121,7 @@ nvim_lsp.sumneko_lua.setup {
 nvim_lsp.emmet_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = { 'html', 'css' },
+  filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "blade", "vue" },
   init_options = {
     html = {
       options = {
@@ -131,6 +141,7 @@ nvim_lsp.astro.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
+
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
