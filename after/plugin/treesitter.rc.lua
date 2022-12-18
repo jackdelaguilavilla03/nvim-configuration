@@ -5,22 +5,25 @@ ts.setup {
   highlight = {
     enable = true,
     disable = {
-      --"lua"
+      -- "lua",
     },
+
+    additional_vim_regex_highlighting = false,
+
   },
   indent = {
     enable = true,
     disable = {},
   },
   ensure_installed = {
+    "vim",
+    "lua",
     "tsx",
-    "lua",
-    "toml",
-    "json",
-    "yaml",
-    "css",
+    "javascript",
+    "vue",
     "html",
-    "lua",
+    "css",
+    "json",
   },
   autotag = {
     enable = true,
@@ -30,11 +33,11 @@ ts.setup {
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
 parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }
 
-require 'nvim-treesitter.configs'.setup {
-  highlight = {
-    enable = true,
-    custom_captures = {
-      ["attr.value"] = "TSKeyword"
-    }
-  },
-}
+-- require 'nvim-treesitter.configs'.setup {
+--   highlight = {
+--     enable = true,
+--     custom_captures = {
+--       ["attr.value"] = "TSKeyword"
+--     }
+--   },
+-- }
