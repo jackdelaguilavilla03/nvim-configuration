@@ -76,9 +76,20 @@ local lsp_flags = { debounce_text_changes = 150 }
 
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
-  -- filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  filetypes = { "typescriptreact", "typescript.tsx", "javascriptreact" },
   capabilities = capabilities,
   --   cmd = { "typescript-language-server", "--stdio" },
+}
+
+nvim_lsp.angularls.setup {
+  on_attach = on_attach,
+  -- filetypes = { "typescript" },
+  capabilities = capabilities,
+}
+
+nvim_lsp.cssls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
 
 -- nvim_lsp.volar.setup {
@@ -134,7 +145,7 @@ nvim_lsp.emmet_ls.setup {
 nvim_lsp.html.setup {
   on_attach = on_attach,
   flags = lsp_flags,
-  -- capabilities = capabilities,
+  capabilities = capabilities,
 }
 
 nvim_lsp.astro.setup {

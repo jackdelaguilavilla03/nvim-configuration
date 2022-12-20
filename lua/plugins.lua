@@ -27,6 +27,13 @@ packer.startup(function(use)
   -- Coc Neovim
   -- use { 'neoclide/coc.nvim', branch = 'release' }
 
+  --Folding
+  use({
+    'anuvyklack/pretty-fold.nvim',
+    'anuvyklack/fold-preview.nvim',
+    'anuvyklack/keymap-amend.nvim',
+  })
+
   -- Completion
   use({
     "L3MON4D3/LuaSnip",

@@ -28,6 +28,9 @@ vim.opt.backspace = { 'start', 'eol', 'indent' }
 vim.opt.path:append { '**' }
 vim.opt.wildignore:append { '*/node_modules/*' }
 
+vim.opt.foldlevel = 20
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])

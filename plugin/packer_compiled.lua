@@ -143,6 +143,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\jackd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\emmet-ls",
     url = "https://github.com/aca/emmet-ls"
   },
+  ["fold-preview.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\jackd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fold-preview.nvim",
+    url = "https://github.com/anuvyklack/fold-preview.nvim"
+  },
   ["git.nvim"] = {
     loaded = true,
     path = "C:\\Users\\jackd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\git.nvim",
@@ -157,6 +162,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\jackd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
+  },
+  ["keymap-amend.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\jackd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\keymap-amend.nvim",
+    url = "https://github.com/anuvyklack/keymap-amend.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -272,6 +282,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\jackd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["pretty-fold.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\jackd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\pretty-fold.nvim",
+    url = "https://github.com/anuvyklack/pretty-fold.nvim"
   },
   ["refactoring.nvim"] = {
     loaded = true,
